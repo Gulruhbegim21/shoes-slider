@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Shoes Slider</title>
+</head>
+<body>
+	<div class="container">
+		<ul class="thumb">
+			<li onmouseover="changeImgsource('shoe1.png')"><img src="shoe1.png" alt="shoes"></li>
+			<li onmouseover="changeImgsource('shoe2.png')"><img src="shoe2.png" alt="shoes"></li>
+			<li onmouseover="changeImgsource('shoe3.png')"><img src="shoe3.png" alt="shoes"></li>
+		</ul>
+		<div class="imgBox">
+			<h2>Nike Air Zoom</h2>
+			<img src="shoe1.png" class="shoes"  height="450" alt="shoes">
+			<ul class="size">
+				<span>Size</span>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+			</ul>
+			<a href="#" class="btn">Add To Card</a>
+		</div>
+	</div>
+	<script>
+		function changeImgsource(anything){
+			document.querySelector('.shoes').src = anything;
+		}
+	</script>
+</body>
+</html>
